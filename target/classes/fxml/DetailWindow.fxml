@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="350.0" spacing="15.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Detail Informasi Produk">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <GridPane hgap="10.0" vgap="10.0">
+         <children>
+            <Label style="-fx-font-weight: bold;" text="Kode Produk:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label fx:id="lblKode" text="-" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label style="-fx-font-weight: bold;" text="Nama Produk:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="lblNama" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label style="-fx-font-weight: bold;" text="Kategori:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="lblKategori" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label style="-fx-font-weight: bold;" text="Harga:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label fx:id="lblHarga" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+   
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Button onAction="#handleTutup" prefHeight="25.0" prefWidth="338.0" text="Tutup" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
